@@ -128,7 +128,7 @@ function llamado(n){
     }Counter();
 }
 llamado(20);
-*/
+
 
 console.log("*************************************************")
 console.log("*************************************************")
@@ -181,7 +181,23 @@ function poo(){
 }
 
 poo();
+*/
+const readline=require('readline');
 
+function validate(value){
+//let count=value;
+const number= parseInt(value,10);
+if(isNaN(number)){
+    return{valid:false,message:"la entrada" };
+}
+
+if(number< 0 || number>100){
+
+    return{valid: false,message:"ahah "};
+}
+return{ valid: true, message: "entrada valida"};
+
+}
 
 
 
